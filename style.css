@@ -1,0 +1,175 @@
+/* Site settings */
+html {
+    scroll-behavior: smooth;
+    cursor: url("images/green_cursor.svg"), auto;
+    background-color: #dfe3d9;
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+svg {
+    width: 10px;
+    height: 10px;
+}
+
+/* Button formatting */
+button {
+    background-color: #b2cb8f; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    transition-duration: 0.4s;
+    border-radius: 50px;
+    transition: all 0.5s;
+    /*cursor: pointer;*/
+    margin: 5px;
+    width: 80%;
+    cursor: url("images/green_hand.svg"), auto;
+  }
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    cursor: url("images/green_hand.svg"), auto;
+  }
+  
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    cursor: url("images/green_hand.svg"), auto;
+  }
+
+button:hover {
+    background-color: #D1E0B5; /* Light beige */
+    transition: background-color 1.5s ease-out;
+    color:rgb(255, 255, 255);
+    border-radius: 50px;
+    padding-right:25px;
+    cursor: url("images/green_hand.svg"), auto;
+}
+
+button:hover span {
+    color:rgb(255, 255, 255);
+    border-radius: 50px;
+    padding-right:25px;
+    cursor: url("images/green_hand.svg"), auto;
+  }
+
+button:hover span:after {
+    /*background-color: #eac6e5; /* Light pink */
+    color:whitesmoke;
+    border-radius: 50px;
+    opacity: 1;
+    right: 0px;
+    cursor: url("images/green_hand.svg"), auto;
+  }
+
+/* Container formatting */
+.container {
+    margin: 25px;
+    width: 350px;
+    height: 590px;
+    /*outline: dashed 4px #C1B9B7;*/
+    border-radius: 25px;
+    text-align: center;
+    background-color: white;
+    padding-top: 15%;
+}
+
+/* Text formatting */
+h1 {
+    font-family: "Helvetica", Arial, Helvetica, sans-serif;
+    color:rgb(70,70,70)
+  }
+h2 {
+    font-family: "Helvetica", Arial, Helvetica, sans-serif;
+    color:rgba(70,70,70,0.75)
+  }
+
+h3 {
+    font-family: "Helvetica", Arial, Helvetica, sans-serif;
+    color:#b2cb8f
+  }
+
+p1 {
+    font-family: "Helvetica", Arial, Helvetica, sans-serif;
+    color:rgba(70,70,70,0.8);
+  }
+
+p2 {
+    font-size: 10px;
+    font-family: "Helvetica", Arial, Helvetica, sans-serif;
+    color:rgba(141, 141, 141, 0.8)
+  }
+
+/* Link formatting */
+a {
+    font-family: "Helvetica", Arial, Helvetica, sans-serif;
+    color:#b2cb8f
+
+  }
+
+a:hover {
+    color: #D1E0B5;
+    cursor: url("images/green_hand.svg"), auto;
+  }
+
+/* 3D image flip formatting */
+.flip-box {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    padding-right: px 50;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-box-back {
+    background-color: #f2f5ee;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 100px;
+  }
