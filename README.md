@@ -14,4 +14,3 @@ Personal link site template
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077b5)](https://www.linkedin.com/in/kayley-vu/)
 &nbsp;
 [![Email](https://img.shields.io/badge/kayleytvu@gmail.com-red)](mailto:kayleytvu@gmail.com)
-![image](https://github.com/kayleyvu/link-site/assets/136641247/02ea22ee-7c0c-45d1-a1f6-713a47d64d9b)
