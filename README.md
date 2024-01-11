@@ -7,7 +7,7 @@ Personal link site template
 
 ![image](https://github.com/kayleyvu/link-site/assets/136641247/7636f452-f3d8-4d6f-8876-d3519e799fd2)
 
-## Languages 
+## Tech stack 
 * HTML: website framework linked to external CSS style sheet file
 * CSS: website styling, 3D flip effect for headshot, custom cursor, etc. 
 
